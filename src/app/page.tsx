@@ -3,9 +3,9 @@ import Image from "next/image";
 import logo from "../../public/logo.ico"
 import ObjectivesCard from "@/components/home/objectivesCard";
 import bgImage from "../../public/IMG_2863.webp"
-import firstDay from "../../public/IMG_1452.webp"
-import secondDay from "../../public/IMG_20250222_120215.webp"
-import thirdDay from "../../public/IMG_3020.webp"
+import firstDay from "../../public/IMG_1458.webp"
+import secondDay from "../../public/IMG_2861.webp"
+import thirdDay from "../../public/o.webp"
 import AboutShelter from "@/components/home/aboutShelter";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="grid place-items-center h-auto bg-blue-600 gap-8">
       <section className="flex flex-col justify-center gap-12 w-full md:h-screen  items-center p-4 h-auto relative" >
-        <div className="bg-cover bg-no-repeat w-full sm:h-auto md:h-screen  absolute inset-0 z-0 saturate-100 brightness-50 rounded-b-xl" style={{ backgroundImage: `url(${bgImage.src})` }} >
+        <div className="bg-cover bg-no-repeat w-full sm:h-auto md:h-[90vh]  absolute inset-0 z-0 saturate-100 brightness-50 rounded-b-xl" style={{ backgroundImage: `url(${bgImage.src})` }} >
         </div>
         <div className="w-full flex flex-col items-center gap-4 z-10">
           <Image src={logo} alt="logo" className="w-64 h-54" priority />
@@ -46,9 +46,9 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-4 z-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-4 z-10 ">
           {ThreeDaysImage.map((image, index) => (
-            <Image src={image.image} alt={image.alt} className="border border-white h-[200px] rounded-xl bg-cover" key={index} priority ></Image >
+            <Image src={image.image} alt={image.alt} className="shadow-md h-[200px] rounded-xl bg-cover" key={index} priority ></Image >
 
           ))}
 
