@@ -23,7 +23,7 @@ export default function ObjectivesCard() {
     {
       title: "Promote the animal shelter to increase awareness and encourage donations",
       items: [
-        "Promote the animal shelter to increase awareness and encourage donations Create a PAW-ASA website to showcase the dedication and legacy of the members of Prudence, aiming to encourage support not only through donations but also through technological advancement as a non-profit shelter.",
+        "Promote the animal shelter to increase awareness and encourage donations.",
         "Create a PAW-ASA website to showcase the dedication and legacy of the members of Prudence, aiming to encourage support not only through donations but also through technological advancement as a non-profit shelter.",
         "Encourage donations by showcasing the shelter's needs and motivating people to contribute."
       ]

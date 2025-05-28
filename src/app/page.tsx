@@ -7,6 +7,8 @@ import firstDay from "../../public/IMG_1458.webp"
 import secondDay from "../../public/IMG_2861.webp"
 import thirdDay from "../../public/o.webp"
 import AboutShelter from "@/components/home/aboutShelter";
+import spcba from "../../public/Untitled-removebg-preview.png"
+import nstp from "../../public/bx10800-TOTu0pzNHthr-removebg-preview.png"
 
 export default function Home() {
   const ThreeDaysImage = [{
@@ -22,14 +24,35 @@ export default function Home() {
     alt: "thirdday"
 
   }]
+
+  const Logos = [{
+    image: nstp,
+    alt: "nstp"
+  },
+  {
+    image: logo,
+    alt: "paw-asa"
+
+  }, {
+    image: spcba,
+    alt: "spcba"
+
+  }]
   return (
     <div className="grid place-items-center h-auto bg-blue-600 gap-8">
       <section className="flex flex-col justify-center gap-12 w-full md:h-screen  items-center p-4 h-auto relative" >
         <div className="bg-cover bg-no-repeat w-full sm:h-auto md:h-[90vh]  absolute inset-0 z-0 saturate-100 brightness-50 rounded-b-xl" style={{ backgroundImage: `url(${bgImage.src})` }} >
         </div>
         <div className="w-full flex flex-col items-center gap-4 z-10">
-          <Image src={logo} alt="logo" className="w-64 h-54" priority />
-          <h1 className={`text-4xl md:text-5xl font-bold text-white
+
+          <div className="flex gap-4 w-4/6 justify-between">
+            {
+              Logos.map((logo) => (
+                <Image src={logo.image} alt={logo.alt} className="w-64 h-54" priority />
+
+              ))
+            }
+          </div>        <h1 className={`text-4xl md:text-5xl font-bold text-white
             ${fontHeader.className}`}>
             Blue - Prudence - Paw Asa     </h1>
           <p className="text-xl  text-white/80">
