@@ -47,8 +47,8 @@ export default function Home() {
 
           <div className="flex gap-4 w-4/6 justify-between">
             {
-              Logos.map((logo) => (
-                <Image src={logo.image} alt={logo.alt} className="w-64 h-54" priority />
+              Logos.map((logo, number) => (
+                <Image src={logo.image} alt={logo.alt} key={number} className="w-64 h-54" priority />
 
               ))
             }
